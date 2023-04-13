@@ -157,4 +157,7 @@ aside{
         width: 0;
         height: 0;
     }
+    .textRead textarea{
+        width: 85%;
+    }
 }
