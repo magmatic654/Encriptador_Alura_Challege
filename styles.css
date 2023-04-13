@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+body{
+    margin: 0;
+    background-color: #E5E5E5;
+}
+header{
+    background-color: red;
+    height: 20vh;
+}
+.contenedorMain{
+    display: flex;
+    height: 100vh;
+}
+
+textarea{
+    outline: none;
+    border: none;
+}
+main{
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    flex-grow: 2;
+    display: flex;
+    justify-content: start;
+}
+.logo img{
+    margin: auto 0;
+    height: 48px;
+}
+.textRead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 8;
+}
+.textRead textarea{
+    border-style: none;
+    width: 60%;
+    height: 90%;
+    font-size: 32px;
+    line-height: 48px;
+    color: #0A3871;
+
+
+    background-color: transparent;
+}
+.textRead textarea::placeholder{
+    color: #0A3871;
+}
+.mainBtn{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-grow: 2;
+}
+input{
+    height: 67px;
+    width: 95%;
+    max-width: 336px;
+    border-style: none;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 0 10px;
+    background-color: white;
+    transition: transform .2s, background-color .2s;
+    
+}
+
+.btnMain:nth-child(1){
+    background-color: #0A3871;
+    color: white;
+    text-align: center;
+}
+.btnMain:nth-child(2){
+    background-color: white;
+    color: #0A3871;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+.contenedor_textWrite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 90%;
+    width: 450px;
+    min-width: 30%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+}
+.contenedor_textWrite h2{
+    margin: 0 auto;
+    text-align: center;
+    color: #343A40;
+    font-size: 24px;
+}
+.contenedor_textWrite p{
+ text-align: center;
+ color: #343A40;
+}
+.textWrite{
+    width: 85%;
+    height: 80%;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #0A3871;
+}
+.contenedor_textWrite input[type="button"]{
+    margin-bottom: 50px;
+
+}
+.btnAgrandar{
+    transform: scale(1.1);
+    background-color: #0A3871;
+    color: white;
+}
+.svg{
+    background-image: url(svg/Muñeco.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40%;
+    width: 90%;
+}
+#found{
+    display: none;
+}
+@media(max-width: 1000px){
+    .contenedorMain{
+        flex-direction: column;
+    }
+    .contenedor_textWrite{
+        width: 90%;
+    }
+    .svg{
+        background-image: none;
+        width: 0;
+        height: 0;
+    }
+}

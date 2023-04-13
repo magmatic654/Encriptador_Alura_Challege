@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="contenedorMain">
+        
+    <main>
+        <div class="logo">
+            <img src="svg/Logo.svg" alt="logoAlura">
+        </div>
+        <div class="textRead">
+           <textarea id="texto" style="resize: none;" placeholder="Ingrese el texto aquí" ></textarea>
+        </div>
+
+        <div class="mainBtn">
+            <input type="button" value="Encriptar" id='btn_encriptar' class="btnMain">
+            <input type="button" value="Desencriptar" id="btn_desencriptar" class="btnMain">
+        </div>
+    </main>
+        <aside>
+            <div class="contenedor_textWrite" id="notFound">
+                <div class="svg"></div>
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="contenedor_textWrite"id="found">
+                <textarea style="resize: none;" class="textWrite"></textarea>
+                <input type="button" value="Copiar" id="btn_copy">
+            </div>
+        </aside>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
