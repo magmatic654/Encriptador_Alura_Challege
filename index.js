@@ -1,3 +1,4 @@
+
 const BTNENCRIPTAR = document.querySelector('#btn_encriptar');
 const BTNDESENCRIPTAR = document.querySelector('#btn_desencriptar');
 const BTNCOPIAR = document.querySelector('#btn_copy')
@@ -44,31 +45,41 @@ function desencriptar(text){
 
 }
 function mostrarTexto(text){
-       if(TEXTOTRANSFORMADO.value!== ''){
-        TEXTOTRANSFORMADO.value = '';
+       if(TEXTOTRANSFORMADO.textContent !== ''){
+        TEXTOTRANSFORMADO.textContent = '';
        }
-       TEXTOTRANSFORMADO.value = text;
-       textoTransformado = TEXTOTRANSFORMADO.value;
+       TEXTOTRANSFORMADO.textContent = text;
+       console.log(TEXTOTRANSFORMADO.textContent)
+       textoTransformado = TEXTOTRANSFORMADO.textContent;
        return textoTransformado;
 }
 function copiar(copytext){
     navigator.clipboard.writeText(copytext)
     
-    BTNCOPIAR.value = 'Copiado';
+    BTNCOPIAR.textContent = 'Copiado';
     BTNCOPIAR.classList.add('btnAgrandar')
     setTimeout(()=>{
         BTNCOPIAR.classList.remove('btnAgrandar')
-            BTNCOPIAR.value = 'Copiar';
+            BTNCOPIAR.textContent = 'Copiar';
             
     },600);
 }
 function hide(){
-    if(!(TEXTOTRANSFORMADO.value)){
+    if(!TEXTOTRANSFORMADO.textContent){
         document.querySelector('#found').style.display="none"
         document.querySelector('#notFound').style.display="flex"
+        setTimeout(()=>{
+            document.querySelector('aside').style.backgroundColor = '#9ecbf7'
+        },1000)
+        document.querySelector('aside').style.backgroundColor = '#dc4787'
     }else{
         document.querySelector('#found').style.display="flex"
         document.querySelector('#notFound').style.display="none"
+
+        setTimeout(()=>{
+            document.querySelector('aside').style.backgroundColor = '#9ecbf7'
+        },1000)
+        document.querySelector('aside').style.backgroundColor = '#76de9b'
     }
 }
 

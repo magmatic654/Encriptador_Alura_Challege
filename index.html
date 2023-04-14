@@ -17,27 +17,31 @@
             <img src="svg/Logo.svg" alt="logoAlura">
         </div>
         <div class="textRead">
-           <textarea id="texto" style="resize: none;" placeholder="Ingrese el texto aquí" ></textarea>
+           <textarea id="texto" placeholder="Ingresa el texto que desees transformar aquí" ></textarea>
         </div>
 
         <div class="mainBtn">
-            <input type="button" value="Encriptar" id='btn_encriptar' class="btnMain">
-            <input type="button" value="Desencriptar" id="btn_desencriptar" class="btnMain">
+            <button id='btn_encriptar' class="btnMain">Encriptar <img src="svg/lock-svgrepo-com (1).svg" alt=""></button>
+            <button id="btn_desencriptar" class="btnMain">Desencriptar <img src="svg/lock-open-svgrepo-com (1).svg" alt=""></button>
         </div>
     </main>
-        <aside>
-            <div class="contenedor_textWrite" id="notFound">
-                <div class="svg"></div>
-                <h2>Ningún mensaje fue encontrado</h2>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+    <aside>
+        <div class="contenedor_textWrite" id="notFound">
+            <div class="svg">
+                <img src="svg/magnifying-glass-tilted-right-svgrepo-com (1).svg" alt="Texto no encontrado">
             </div>
-            <div class="contenedor_textWrite"id="found">
-                <textarea style="resize: none;" class="textWrite"></textarea>
-                <input type="button" value="Copiar" id="btn_copy">
-            </div>
-        </aside>
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desees encriptar o desencriptar para seguir.</p>
+        </div>
+        <div class="contenedor_textWrite"id="found">
+            <p class="textWrite"></p>
+            <button  id="btn_copy">Copiar</button>
+        </div>
+    </aside>
     </div>
-
+    <footer>
+        <h3>Creador: Harold Edward Rodriguez Navarro <strong>Todos los derechos reservados ©️</strong></h3>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>

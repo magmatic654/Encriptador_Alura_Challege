@@ -3,14 +3,13 @@
 *{
     font-family: 'Inter', sans-serif;
 }
+h3{
+    margin: 0;
+}
 body{
     margin: 0;
-    background-color: #E5E5E5;
 }
-header{
-    background-color: red;
-    height: 20vh;
-}
+
 .contenedorMain{
     display: flex;
     height: 100vh;
@@ -19,11 +18,13 @@ header{
 textarea{
     outline: none;
     border: none;
+    resize: none;
 }
 main{
     flex-grow: 3;
     display: flex;
     flex-direction: column;
+    background-color: #f7f3fd;
 }
 .logo{
     flex-grow: 2;
@@ -31,8 +32,8 @@ main{
     justify-content: start;
 }
 .logo img{
-    margin: auto 0;
-    height: 48px;
+    margin: auto;
+    height: 50px;
 }
 .textRead{
     display: flex;
@@ -57,24 +58,30 @@ main{
 .mainBtn{
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 5%;
     flex-grow: 2;
 }
-input{
-    height: 67px;
-    width: 95%;
-    max-width: 336px;
+button{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    height: 100px;
+    max-height: 50%;
+    width: 250px;
+    max-width: 47%;
     border-style: none;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    font-weight: 400;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 10px;
-    margin: 0 10px;
+    font-size: 25px;
     background-color: white;
+    color: #0A3871;
     transition: transform .2s, background-color .2s;
-    
+}
+button img{
+    height: 25px;
 }
 
 .btnMain:nth-child(1){
@@ -93,14 +100,15 @@ aside{
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    
+    background-color: #9ecbf7;
+    transition: background-color .5s;
 }
 .contenedor_textWrite{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color:  #f7f3fd;
     height: 90%;
     width: 450px;
     min-width: 30%;
@@ -115,18 +123,21 @@ aside{
     font-size: 24px;
 }
 .contenedor_textWrite p{
- text-align: center;
  color: #343A40;
 }
 .textWrite{
     width: 85%;
     height: 80%;
-    margin-top: 30px;
+    overflow-wrap: break-word;
+    overflow-y: auto;
     border-radius: 10px;
     font-size: 24px;
     color: #0A3871;
+    margin: 15px 0;
 }
-.contenedor_textWrite input[type="button"]{
+
+
+.contenedor_textWrite button{
     margin-bottom: 50px;
 
 }
@@ -135,29 +146,46 @@ aside{
     background-color: #0A3871;
     color: white;
 }
-.svg{
-    background-image: url(svg/Muñeco.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40%;
-    width: 90%;
+.svg img{
+    height: 100px;
 }
 #found{
     display: none;
 }
-@media(max-width: 1000px){
+#notFound{
+    text-align: center;
+}
+footer{
+    background-color: #157ce2;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 100;
+}
+footer h3{
+    font-size: 25px;
+}
+footer strong{
+    font-size: 18px;
+}
+@media(max-width: 1100px){
     .contenedorMain{
         flex-direction: column;
     }
+    .mainBtn button{
+        font-size: 20px;
+    }
     .contenedor_textWrite{
         width: 90%;
+        max-height: 350px;
     }
     .svg{
-        background-image: none;
-        width: 0;
-        height: 0;
+        display: none;
     }
     .textRead textarea{
         width: 85%;
+    }
+    .contenedor_textWrite{
+        height: 260px;
     }
 }
