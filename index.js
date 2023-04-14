@@ -35,7 +35,6 @@ function mostrarTexto(text){
         TEXTOTRANSFORMADO.textContent = '';
        }
        TEXTOTRANSFORMADO.textContent = text;
-       console.log(TEXTOTRANSFORMADO.textContent)
        textoTransformado = TEXTOTRANSFORMADO.textContent;
        return textoTransformado;
 }
