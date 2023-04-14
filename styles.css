@@ -3,6 +3,7 @@
 *{
     font-family: 'Inter', sans-serif;
 }
+
 h3{
     margin: 0;
 }
@@ -187,6 +188,10 @@ footer strong{
     .contenedor_textWrite{
         margin: 20px;
         width: 90%;
+        max-height: 90%;
+    }
+    .contenedor_textWrite button{
+        margin: 0 0 10px 0;
     }
     .svg{
         display: none;
