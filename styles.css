@@ -12,7 +12,7 @@ body{
 
 .contenedorMain{
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 
 textarea{
@@ -23,6 +23,7 @@ textarea{
 main{
     flex-grow: 3;
     display: flex;
+    height: 100vh;
     flex-direction: column;
     background-color: #f7f3fd;
 }
@@ -102,6 +103,7 @@ aside{
     flex-grow: 1;
     background-color: #9ecbf7;
     transition: background-color .5s;
+    height: 100vh;
 }
 .contenedor_textWrite{
     display: flex;
@@ -152,6 +154,8 @@ aside{
     display: none;
 }
 #notFound{
+    display: flex;
+    gap: 4rem;
     text-align: center;
 }
 footer{
@@ -174,9 +178,15 @@ footer strong{
     .mainBtn button{
         font-size: 20px;
     }
+    main{
+        height: 80vh;
+    }
+    aside{
+        height: 50vh;
+    }
     .contenedor_textWrite{
+        margin: 20px;
         width: 90%;
-        max-height: 350px;
     }
     .svg{
         display: none;
