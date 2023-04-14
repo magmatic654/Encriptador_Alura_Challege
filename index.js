@@ -10,28 +10,14 @@ let textoTransformado;
 function encriptar(text){
 
     let newText;
-    newText = text.split('');
+    
+    newText = text.replace(/e/g,'enter');
+    newText = newText.replace(/i/g,'imes');
+    newText = newText.replace(/a/g,'ai');
+    newText = newText.replace(/o/g,'ober');
+    newText = newText.replace(/u/g,'ufat');
 
-    for(let i = 0;i < newText.length; i++ ){
-        if(newText[i] === 'e'){
-            newText[i] = 'enter';
-        }
-        if(newText[i] === 'i'){
-            newText[i] = 'imes';
-        }
-        if(newText[i] === 'a'){
-            newText[i] = 'ai';
-        }
-        if(newText[i] === 'o'){
-            newText[i] = 'ober';
-        }
-        if(newText[i] === 'u'){
-            newText[i] = 'ufat';
-        }
-    }
-    newText = newText.join('')
     mostrarTexto(newText)
-
 }
 function desencriptar(text){
 
