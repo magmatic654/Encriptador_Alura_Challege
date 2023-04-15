@@ -73,11 +73,10 @@ button{
     width: 250px;
     max-width: 40%;
     border-style: none;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
+    border-radius: 12px;
     cursor: pointer;
     font-size: 25px;
-    background-color: white;
+    background-color: #f7f3fd;
     color: #0A3871;
     transition: transform .2s, background-color .2s;
 
@@ -87,13 +86,22 @@ button img{
 }
 
 .btnMain:nth-child(1){
-    background-color: #0A3871;
+    background-color: #1393c2;
+    color: white;
+    text-align: center;
+}
+.btnMain:nth-child(1):hover{
+    background-color: #15719c;
     color: white;
     text-align: center;
 }
 .btnMain:nth-child(2){
-    background-color: white;
-    color: #0A3871;
+    background-color: #f7f3fd;
+    color: #105b7e;
+    border: 1px solid #bae7f6;
+}
+.btnMain:nth-child(2):hover{
+    background-color: #bae7f6;
 }
 
 aside{
@@ -143,16 +151,17 @@ aside{
 
 .contenedor_textWrite button{
     margin-bottom: 50px;
-
+    border: 1px solid #1393c2;
 }
 .btnAgrandar{
     transform: scale(1.1);
-    background-color: #0A3871;
+    background-color: #1393c2;
     color: white;
 }
 .svg img{
     height: 100px;
 }
+
 #found{
     display: none;
 }
