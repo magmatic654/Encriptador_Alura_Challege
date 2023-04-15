@@ -6,7 +6,6 @@ const TEXTOTRANSFORMADO = document.querySelector('.textWrite')
 let texto = document.querySelector('#texto');
 let textoTransformado;
 
-
 function encriptar(text){
 
     let newText;
@@ -46,7 +45,6 @@ function copiar(copytext){
     setTimeout(()=>{
         BTNCOPIAR.classList.remove('btnAgrandar')
             BTNCOPIAR.textContent = 'Copiar';
-            
     },600);
 }
 function hide(){
