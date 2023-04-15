@@ -81,6 +81,7 @@ button{
     background-color: white;
     color: #0A3871;
     transition: transform .2s, background-color .2s;
+
 }
 button img{
     height: 25px;
@@ -105,6 +106,7 @@ aside{
     background-color: #9ecbf7;
     transition: background-color .5s;
     height: 100vh;
+    width: 35%;
 }
 .contenedor_textWrite{
     display: flex;
@@ -113,8 +115,9 @@ aside{
     align-items: center;
     background-color:  #f7f3fd;
     height: 90%;
-    width: 450px;
-    min-width: 30%;
+    width: 500px;
+    max-width: 85%;
+    padding: 10px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 
@@ -172,7 +175,7 @@ footer h3{
 footer strong{
     font-size: 18px;
 }
-@media(max-width: 1100px){
+@media(max-width: 768px){
     .contenedorMain{
         flex-direction: column;
     }
@@ -180,15 +183,17 @@ footer strong{
         font-size: 20px;
     }
     main{
-        height: 80vh;
+        height: 60vh;
     }
     aside{
-        height: 50vh;
+        height: 60vh;
+        width: 100%;
     }
     .contenedor_textWrite{
         margin: 20px;
         width: 90%;
-        max-height: 90%;
+        height: 500px;
+       max-height: 90%;
     }
     .contenedor_textWrite button{
         margin: 0 0 10px 0;
@@ -198,8 +203,5 @@ footer strong{
     }
     .textRead textarea{
         width: 85%;
-    }
-    .contenedor_textWrite{
-        height: 260px;
     }
 }
